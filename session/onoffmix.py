@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup as bs
 
 
-def main():
+def onoffmix():
     with requests.Session() as s:
         # Login
         s.headers = {
@@ -25,4 +25,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    onoffmix()
