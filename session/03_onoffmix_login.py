@@ -10,7 +10,7 @@ def onoffmix():
                           'AppleWebKit/537.36 (KHTML, like Gecko) Chrome/59.0.3071.115 Safari/537.36'
         }
         login = s.post('https://onoffmix.com/account/login', data={
-            'email': 'usermail@gmail.com',
+            'email': 'userid@mail.com',
             'pw': 'mypassword1234',
             'proc': 'login'
         })
