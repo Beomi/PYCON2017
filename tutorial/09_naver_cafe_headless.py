@@ -1,15 +1,19 @@
-# 08_naver.cafe.py
+# 09_naver_cafe_headless.py
 from selenium import webdriver
 import time
 
-driver = webdriver.Chrome('chromedriver')
+options = webdriver.ChromeOptions()
+options.add_argument('headless')
+options.add_argument('window-size=1920x1080')
+
+driver = webdriver.Chrome('chromedriver', chrome_options=options)
 driver.implicitly_wait(3)
-driver.get('https://naver.com')
+driver.get('https://nid.naver.com/nidlogin.login')
 
 input_id = driver.find_element_by_css_selector('#id')
 input_pw = driver.find_element_by_css_selector('#pw')
 login_button = driver.find_element_by_css_selector(
-    '#frmNIDLogin > fieldset > span > input[type="submit"]'
+    '#frmNIDLogin > fieldset > input[type="submit"]'
     )
 
 input_id.send_keys('')
