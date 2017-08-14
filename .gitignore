@@ -1,6 +1,6 @@
 # Screenshot by Selenium
 *.png
-
+tmp.py
 
 # Created by https://www.gitignore.io/api/macos,python,sublimetext
 
